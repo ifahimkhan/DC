@@ -23,11 +23,11 @@ server = SimpleXMLRPCServer(("localhost", 9000))
 print("Server is running on port 9000...")
 
 # Register functions
-server.register_function(add, "add")
-server.register_function(subtract, "subtract")
-server.register_function(multiply, "multiply")
-server.register_function(divide, "divide")
-# server.register_function(square, "square")
+server.register_function(add)
+server.register_function(subtract)
+server.register_function(multiply)
+server.register_function(divide)
+server.register_function(square)
 
 # Start the server
 server.serve_forever()
