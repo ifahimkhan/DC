@@ -54,7 +54,7 @@ public class LamportLogicalClock {
 
         // P3 sends a message to P1
         int timestampP3 = p3.sendEvent();
-        p1.receiveEvent(timestampP3);
+         p1.receiveEvent(timestampP3);
 
         System.out.println("\nFinal Logical Clocks:");
         System.out.println("Process 1: " + p1.logicalClock);
